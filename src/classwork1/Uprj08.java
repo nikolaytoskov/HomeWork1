@@ -14,8 +14,15 @@ public class Uprj08{
                 int f=scanner.nextInt();
                 System.out.println("Въведете стойност за g:");
                 int g=scanner.nextInt();
-                System.out.println("Отговорът на Упражнение \"8\" е: "+(f+g));
-                
+        if ((f > 0) && (g > 0)) {
+            System.out.println(f + " и " + g + " са положителни числа.");
+        }
+        else if ((f > 0) || (g > 0)) {
+            System.out.println(f + " или " + g + " е положително число.");
+        }
+        else if (f != g) {
+            System.out.println(f + " е различно от " + g + ".");
+        }                   
     }
        
 }
